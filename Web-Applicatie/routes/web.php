@@ -12,5 +12,19 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+
+Route::get('/maandag', 'WeekdagenController@geefMaandag');
+
+    //$vakken = DB::table('Vakken')->get();
+
+    // return view('maandag', compact('vakken'));
+
+Route::get('/dinsdag', 'WeekdagenController@geefDinsdag');
+
+Route::get('/woensdag', 'WeekdagenController@geefWoensdag');
+
+Route::get('/donderdag', 'WeekdagenController@geefDonderdag');
+
+Route::get('/vrijdag', 'WeekdagenController@geefVrijdag');
