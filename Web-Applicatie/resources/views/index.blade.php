@@ -1,5 +1,1 @@
-@extends ('master')
-
-@section ('content')
-
-@endsection ('content')
+@extends ('layouts.master')

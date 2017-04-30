@@ -5,53 +5,7 @@
         <link rel="icon" type="image/png" href="img/favicon.ico" />
         <link href="https://fonts.googleapis.com/css?family=Bangers|Oxygen" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/pure/0.6.0/pure-min.css">
-        <style>
-            html{
-                font-family: "Oxygen";
-            }
-            table{
-                margin: auto;
-                width: 100%;
-            }
-            form{
-                margin: 1em auto;
-                text-align: center;
-            }
-            th, h1{
-                font-family: "Bangers";
-                color: rgba(144, 204, 144, 1);
-                font-size: 50px;
-                letter-spacing: 2px;
-            }
-            th{
-                color: #444;
-                font-size: 1.2em !important;
-            }
-            h1{
-                text-align: center;
-                text-shadow: 2px 2px #000;
-            }
-            a{
-                border: solid 0.05em #999;
-                border-radius: 25px;
-                background-color: #CCC;
-                cursor: default;
-                text-decoration: none;
-                color: #000;
-                padding: 0.2em 0.5em;
-            }
-            .center > a{
-                display: table;
-                margin: 1em auto;
-                max-width: 40%;
-                max-height: 40%;
-                min-width: 30%;
-                min-height: 30%;
-                width: auto;
-                height: auto;
-                text-align: center;
-            }
-        </style>
+        <link rel="stylesheet" href="/css/default.css">
     </head>
     <body>
         <div>
@@ -62,11 +16,14 @@
                 <br>
             </form>
             <div class="center">
-                <a href="test.php?maandag=true">Maandag</a>
-                <a href="test.php?dinsdag=true">Dinsdag</a>
-                <a href="test.php?woensdag=true">Woensdag</a>
-                <a href="test.php?donderdag=true">Donderdag</a>
-                <a href="test.php?vrijdag=true">Vrijdag</a>
+                <a href="/maandag">Maandag</a>
+                <a href="/dinsdag">Dinsdag</a>
+                <a href="/woensdag">Woensdag</a>
+                <a href="/donderdag">Donderdag</a>
+                <a href="/vrijdag">Vrijdag</a>
+            </div>
+            <div id="table">
+                @yield('content')
             </div>
         </div>
 

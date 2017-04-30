@@ -1,15 +1,5 @@
-<!DOCTYPE html>
+@extends ('layouts.master')
 
-<html>
-
-<head>
-
-    <title></title>
-
-</head>
-
-<body>
-
-</body>
-
-</html>
+@section ('content')
+	@include ('weekdagen/weekdagenTables/dinsdagTable')
+@endsection ('content')

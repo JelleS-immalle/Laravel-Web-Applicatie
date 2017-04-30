@@ -17,10 +17,6 @@ Route::get('/', function () {
 
 Route::get('/maandag', 'WeekdagenController@geefMaandag');
 
-    //$vakken = DB::table('Vakken')->get();
-
-    // return view('maandag', compact('vakken'));
-
 Route::get('/dinsdag', 'WeekdagenController@geefDinsdag');
 
 Route::get('/woensdag', 'WeekdagenController@geefWoensdag');
