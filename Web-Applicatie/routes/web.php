@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/maandag', 'WeekdagenController@GeefMaandag');
+Route::get('/maandag', 'WeekdagenController@CheckKlas');
 
 Route::get('/dinsdag', 'WeekdagenController@GeefDinsdag');
 
