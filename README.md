@@ -9,6 +9,10 @@ In deze repository vindt u mijn web-applicatie, gemaakt met Laravel.
 
 + Master layout bestand toegevoegd waarin de uurroosters per weekdag als content worden ingevuld
 
+## 03-04-201
+
++ Javascript functie toegevoegd die de inhoud van het inputvak opslaat als cookie... Deze cookie kan dan later uitgelezen worden door Laravel te gebruiken.
+
 ## Wordt in de toekomst toegevoegd...
 
 + Invulvak laten werken wanneer een naam wordt ingegeven

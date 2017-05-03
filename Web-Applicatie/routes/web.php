@@ -15,12 +15,12 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/maandag', 'WeekdagenController@geefMaandag');
+Route::get('/maandag', 'WeekdagenController@GeefMaandag');
 
-Route::get('/dinsdag', 'WeekdagenController@geefDinsdag');
+Route::get('/dinsdag', 'WeekdagenController@GeefDinsdag');
 
-Route::get('/woensdag', 'WeekdagenController@geefWoensdag');
+Route::get('/woensdag', 'WeekdagenController@GeefWoensdag');
 
-Route::get('/donderdag', 'WeekdagenController@geefDonderdag');
+Route::get('/donderdag', 'WeekdagenController@GeefDonderdag');
 
-Route::get('/vrijdag', 'WeekdagenController@geefVrijdag');
+Route::get('/vrijdag', 'WeekdagenController@GeefVrijdag');
