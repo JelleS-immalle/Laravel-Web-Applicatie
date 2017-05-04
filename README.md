@@ -17,7 +17,9 @@ In deze repository vindt u mijn web-applicatie, gemaakt met Laravel.
 
 ## Wordt in de toekomst toegevoegd...
 
-+ SQL-database aanpassen zodat er gebruik kan gemaakt worden van foreign-keys
++ ER-diagram aanpassen zodat er gebruik kan gemaakt worden van foreign-keys [04-05-2017]
+
++ Migration toevoegen aan de hand van het correcte ER-diagram
 
 + Invulvak laten werken wanneer een naam wordt ingegeven
 
