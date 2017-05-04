@@ -17,6 +17,8 @@ In deze repository vindt u mijn web-applicatie, gemaakt met Laravel.
 
 ## Wordt in de toekomst toegevoegd...
 
++ SQL-database aanpassen zodat er gebruik kan gemaakt worden van foreign-keys
+
 + Invulvak laten werken wanneer een naam wordt ingegeven
 
 + Terug werken met cookies die naam en klas bijhouden
