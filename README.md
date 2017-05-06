@@ -23,6 +23,10 @@ In deze repository vindt u mijn web-applicatie, gemaakt met Laravel.
 
 	+ Tussen students en subjects (= many to many)
 
+## 06-05-2017
+
++ Mogelijke oplossing toegevoegd voor het afprinten van uurroosters
+
 ## Wordt in de toekomst toegevoegd...
 
 + ER-diagram aanpassen zodat er gebruik kan gemaakt worden van foreign-keys [04-05-2017]

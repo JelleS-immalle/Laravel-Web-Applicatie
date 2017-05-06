@@ -23,10 +23,9 @@ class WeekdagenController extends Controller
 	}
 
 	public function GeefDinsdag(){
-		$vakken = \DB::table('Vakken')->get();
-		$array = json_decode(json_encode($vakken), True);
+		$subjects = \App\Subject::with('teacher')->get();
 
-		return view('weekdagen.dinsdag', compact('array'));
+		return \View::make('weekdagen.dinsdag')->with('subjects', $subjects);
 	}
 
 	public function GeefWoensdag(){

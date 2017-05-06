@@ -9,9 +9,10 @@
 
 <body>
 	<ul>
-		@foreach( $leerlingen as $leerling)
-			<h1>{{ $leerling->id }}</h1>
-			<h1>{{ $leerling->LeerlingNaam }}</h1>
+		<h1>All subjects:</h1>
+		
+		@foreach ($subjects as $subject)
+		<li>{{ $subject->subjectName }}</li>
 		@endforeach
 	</ul>
 </body>

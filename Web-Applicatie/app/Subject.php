@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Subject extends Model
 {
-	public function teachers()
+	public function teacher()
 	{
 		return $this->belongsTo('\App\Teacher');
 	}

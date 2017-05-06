@@ -12,9 +12,9 @@
 */
 
 Route::get('/', function () {
-	$leerlingen = DB::table('Leerling')->latest()->get();
+	$subjects = \App\Subject::all();
 
-    return view('test', compact('leerlingen'));
+    return View::make('test', compact('subjects'));
 });
 
 Route::get('/maandag', 'WeekdagenController@CheckKlas');
