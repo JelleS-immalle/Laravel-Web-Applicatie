@@ -14,10 +14,10 @@
 Route::get('/', function () {
 	$subjects = \App\Subject::all();
 
-    return View::make('test', compact('subjects'));
+    return View::make('layouts/master');
 });
 
-Route::get('/maandag', 'WeekdagenController@CheckKlas');
+Route::get('/maandag', 'WeekdagenController@GeefMaandag');
 
 Route::get('/dinsdag', 'WeekdagenController@GeefDinsdag');
 
