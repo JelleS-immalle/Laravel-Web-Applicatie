@@ -14,7 +14,9 @@ class WeekdagenController extends Controller
 	public $globalVolgordeDonderdag = array(8,7,9,13,0,0,14,14);
 	public $globalVolgordeVrijdag = array(2,2,9,7,13,3,10);
 
-	static function GeefUurrooster($volgordeDag){
+
+	//Deze functie zou de code een stuk korter kunnen maken, maar ze werkt nog niet.
+	public function GeefUurrooster($volgordeDag){
 		$subjects = \App\Subject::with('teacher')->get();
 		$uren = $this->globalUren;
 		$volgorde = $this->$volgordeDag;
@@ -67,6 +69,11 @@ class WeekdagenController extends Controller
 		return \View::make('weekdagen.uurrooster', compact('subjects', 'uren', 'volgorde', 'i'));
 	}
 	public function GeefVrijdag(){
-		$this->GeefUurrooster($this->$globalVolgordeVrijdag);
+		$subjects = \App\Subject::with('teacher')->get();
+		$uren = $this->globalUren;
+		$volgorde = $this->globalVolgordeVrijdag;
+		$i = count($volgorde); //Deze variabele staat voor het totaal aantal uren die dag.
+
+		return \View::make('weekdagen.uurrooster', compact('subjects', 'uren', 'volgorde', 'i'));
 	}
 }

@@ -1,6 +1,10 @@
 # Laravel-Web-Applicatie
 In deze repository vindt u mijn web-applicatie, gemaakt met Laravel.
 
+### Deze web applicatie heb ik hiervoor ook zonder framework gemaakt, met weliswaar de foute database structuur.
+
+[De repository van de web app zonder framework](https://github.com/JelleS-immalle/Web-Applicatie)
+
 ## 30-04-2017
 
 + Controller toegevoegd met functies per weekdag. Op deze manier zal er voor elke weekdag een view zijn.
@@ -26,6 +30,12 @@ In deze repository vindt u mijn web-applicatie, gemaakt met Laravel.
 ## 06-05-2017
 
 + Mogelijke oplossing toegevoegd voor het afprinten van uurroosters
+
+## 07-05-2017
+
++ Eén view gemaakt die een forloop uitvoert die alle vakken afprint afhankelijk van het array dat wordt meegegeven met de id's in van de vakken
+
++ Functie toegevoegd aan WeekdagenController die de code een stuk korter zou kunnen maken, maar heb de functie nog niet kunnen laten werken
 
 ## Wordt in de toekomst toegevoegd...
 
