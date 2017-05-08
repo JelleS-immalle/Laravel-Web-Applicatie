@@ -37,6 +37,10 @@ In deze repository vindt u mijn web-applicatie, gemaakt met Laravel.
 
 + Functie toegevoegd aan WeekdagenController die de code een stuk korter zou kunnen maken, maar heb de functie nog niet kunnen laten werken
 
+## 08-05-2017
+
++ Seeders toegevoegd die tabellen invullen [Probleem gevonden met het invullen van 'subeject' met id=0]
+
 ## Wordt in de toekomst toegevoegd...
 
 + ER-diagram aanpassen zodat er gebruik kan gemaakt worden van foreign-keys [04-05-2017]
