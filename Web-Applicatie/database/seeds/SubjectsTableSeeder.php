@@ -11,23 +11,51 @@ class SubjectsTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('student_subject')->insert([
-        	'id' => 1, 'student_id' => 1, 'subject_id'=> 1,
+        //CAUTION! Bij het seeden van Software met id=0, zet het programma Software voor één of andere reden onderaan met id=17
+        DB::table('subjects')->insert([
+            'id' => 0, 'subjectName' => 'Software', 'teacher_id'=> 1,
         ]);
-        DB::table('student_subject')->insert([
-        	'id' => 2, 'student_id' => 2, 'subject_id'=> 1,
+        DB::table('subjects')->insert([
+            'id' => 1, 'subjectName' => 'Natuurwetenschappen', 'teacher_id'=> 1,
         ]);
-        DB::table('student_subject')->insert([
-        	'id' => 3, 'student_id' => 1, 'subject_id'=> 2,
+        DB::table('subjects')->insert([
+            'id' => 2, 'subjectName' => 'Systeembeheer', 'teacher_id'=> 2,
         ]);
-        DB::table('student_subject')->insert([
-        	'id' => 4, 'student_id' => 1, 'subject_id'=> 3,
+        DB::table('subjects')->insert([
+            'id' => 3, 'subjectName' => 'Wiskunde', 'teacher_id'=> 2,
         ]);
-        DB::table('student_subject')->insert([
-        	'id' => 5, 'student_id' => 2, 'subject_id'=> 3,
+        DB::table('subjects')->insert([
+            'id' => 4, 'subjectName' => 'Geschiedenis', 'teacher_id'=> 11,
         ]);
-        DB::table('student_subject')->insert([
-        	'id' => 6, 'student_id' => 2, 'subject_id'=> 4,
+        DB::table('subjects')->insert([
+            'id' => 5, 'subjectName' => 'Aardrijkskunde', 'teacher_id'=> 4,
+        ]);
+        DB::table('subjects')->insert([
+            'id' => 6, 'subjectName' => 'Esthetica', 'teacher_id'=> 5,
+        ]);
+        DB::table('subjects')->insert([
+            'id' => 7, 'subjectName' => 'Nederlands', 'teacher_id'=> 6,
+        ]);
+        DB::table('subjects')->insert([
+            'id' => 8, 'subjectName' => 'Engels', 'teacher_id'=> 7,
+        ]);
+        DB::table('subjects')->insert([
+            'id' => 9, 'subjectName' => 'Frans', 'teacher_id'=> 5,
+        ]);
+        DB::table('subjects')->insert([
+            'id' => 10, 'subjectName' => 'Bedrijfsbeheer', 'teacher_id'=> 8,
+        ]);
+        DB::table('subjects')->insert([
+            'id' => 11, 'subjectName' => 'Stage', 'teacher_id'=> 1,
+        ]);
+        DB::table('subjects')->insert([
+            'id' => 12, 'subjectName' => 'Zakelijke Communicatie', 'teacher_id'=> 9,
+        ]);
+        DB::table('subjects')->insert([
+            'id' => 13, 'subjectName' => 'Godsdienst', 'teacher_id'=> 3,
+        ]);
+        DB::table('subjects')->insert([
+            'id' => 14, 'subjectName' => 'L.O.', 'teacher_id'=> 10,
         ]);
     }
 }
