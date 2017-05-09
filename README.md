@@ -1,5 +1,5 @@
 # Laravel-Web-Applicatie
-In deze repository vindt u mijn web-applicatie, gemaakt met Laravel.
+In deze repository vindt u mijn webapplicatie, gemaakt met Laravel.
 
 ### Deze web applicatie heb ik hiervoor ook zonder framework gemaakt, met weliswaar de foute database structuur.
 
