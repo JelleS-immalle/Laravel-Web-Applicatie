@@ -12,9 +12,10 @@
         <div>
             <h1>Geef hieronder je naam in</h1>
                 <div class="InputDiv">
-                    <input type="text" id="NaamLeerling" />
-                    <input type="button" name="submit" value="Verifieer via naam!" onclick="SaveName()"/>
-                    <br>
+                    <form action=studentLessen>
+                        <input type="text" name="naamLeerling"/>
+                        <input type="submit" value="Welke lessen volg ik?"/>
+                    </form>
                 </div>
             <div class="center">
                 <a href="/maandag">Maandag</a>
@@ -25,6 +26,7 @@
             </div>
             <div id="table">
                 @yield('content')
+                @yield('studentContent')
             </div>
         </div>
     </body>

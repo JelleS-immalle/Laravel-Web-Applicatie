@@ -41,12 +41,22 @@ In deze repository vindt u mijn webapplicatie, gemaakt met Laravel.
 
 + Seeders toegevoegd die tabellen invullen [Probleem gevonden met het invullen van 'subeject' met id=0]
 
+## 12-05-2017
+
++ Seeder (StudentSubjectTableSeeder) aangevuld zodat de bestaande students meer subjects volgen
+
++ Mogelijkheid toegevoegd om een naam in te geven van een student, wanneer na het invoeren op de knop wordt gedrukt, worden alle lessen weergegeven die de bepaalde student volgt.
+
++ Wanneer er geen naam wordt meegegeven, wordt je naar een pagina geleid die zegt dat je een naam moet ingeven
+
 ## Wordt in de toekomst toegevoegd...
 
 + ER-diagram aanpassen zodat er gebruik kan gemaakt worden van foreign-keys [04-05-2017]
 
 + Migration toevoegen aan de hand van het correcte ER-diagram [05-05-2017]
 
-+ Invulvak laten werken wanneer een naam wordt ingegeven
++ Invulvak laten werken wanneer een naam wordt ingegeven[12-05-2017]
 
 + Terug werken met cookies die naam en klas bijhouden
+
++ Als er een foutieve naam wordt ingegeven, leiden naar een pagina met een foutmelding (Momenteel enkel wanneer er geen naam wordt gegeven)

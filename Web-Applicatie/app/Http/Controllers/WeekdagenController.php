@@ -8,6 +8,8 @@ class WeekdagenController extends Controller
 {
 	public $globalUren = array('8u25-9u15','9u15-10u05','10u15-11u05','11u05-11u55','12u45-13u35','13u35-14u25','14u35-15u25','15u25-16u15');
 
+	/* De nummers die gebruikt worden hieronder is het id van het vak - 1 (Zolang alle vakken op volgorde staan)*/
+
 	public $globalVolgordeMaandag = array(0,0,4,5,6,7,8);
 	public $globalVolgordeDinsdag = array(2,2,9,8,3,10,11,11);
 	public $globalVolgordeWoensdag = array(3,7,3,1);

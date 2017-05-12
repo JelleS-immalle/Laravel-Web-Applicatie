@@ -1,28 +1,19 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
 Route::get('/', function () {
 	$subjects = \App\Subject::all();
 
     return View::make('layouts/master');
 });
 
-Route::get('/maandag', 'WeekdagenController@GeefMaandag');
+Route::get('/maandag', 'SubjectController@GeefMaandag');
 
-Route::get('/dinsdag', 'WeekdagenController@GeefDinsdag');
+Route::get('/dinsdag', 'SubjectController@GeefDinsdag');
 
-Route::get('/woensdag', 'WeekdagenController@GeefWoensdag');
+Route::get('/woensdag', 'SubjectController@GeefWoensdag');
 
-Route::get('/donderdag', 'WeekdagenController@GeefDonderdag');
+Route::get('/donderdag', 'SubjectController@GeefDonderdag');
 
-Route::get('/vrijdag', 'WeekdagenController@GeefVrijdag');
+Route::get('/vrijdag', 'SubjectController@GeefVrijdag');
+
+Route::get('/studentLessen', 'StudentController@GeefLessenLeerling');
