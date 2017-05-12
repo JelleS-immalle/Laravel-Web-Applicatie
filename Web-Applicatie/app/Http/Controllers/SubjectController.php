@@ -40,8 +40,9 @@ class SubjectController extends Controller
 		$uren = $this->globalUren;
 		$volgorde = $this->globalVolgordeMaandag;
 		$i = count($volgorde); //Deze variabele staat voor het totaal aantal uren die dag.
+		$weekdag = "Maandag";
 
-		return \View::make('weekdagen.uurrooster', compact('subjects', 'uren', 'volgorde', 'i'));
+		return \View::make('weekdagen.uurrooster', compact('subjects', 'uren', 'volgorde', 'i', 'weekdag'));
 	}
 
 	public function GeefDinsdag(){
@@ -49,8 +50,9 @@ class SubjectController extends Controller
 		$uren = $this->globalUren;
 		$volgorde = $this->globalVolgordeDinsdag;
 		$i = count($volgorde); //Deze variabele staat voor het totaal aantal uren die dag.
+		$weekdag = "Dinsdag";
 
-		return \View::make('weekdagen.uurrooster', compact('subjects', 'uren', 'volgorde', 'i'));
+		return \View::make('weekdagen.uurrooster', compact('subjects', 'uren', 'volgorde', 'i', 'weekdag'));
 	}
 
 	public function GeefWoensdag(){
@@ -58,8 +60,9 @@ class SubjectController extends Controller
 		$uren = $this->globalUren;
 		$volgorde = $this->globalVolgordeWoensdag;
 		$i = count($volgorde); //Deze variabele staat voor het totaal aantal uren die dag.
+		$weekdag = "Woensdag";
 
-		return \View::make('weekdagen.uurrooster', compact('subjects', 'uren', 'volgorde', 'i'));
+		return \View::make('weekdagen.uurrooster', compact('subjects', 'uren', 'volgorde', 'i', 'weekdag'));
 	}
 
 	public function GeefDonderdag(){
@@ -67,15 +70,17 @@ class SubjectController extends Controller
 		$uren = $this->globalUren;
 		$volgorde = $this->globalVolgordeDonderdag;
 		$i = count($volgorde); //Deze variabele staat voor het totaal aantal uren die dag.
+		$weekdag = "Donderdag";
 
-		return \View::make('weekdagen.uurrooster', compact('subjects', 'uren', 'volgorde', 'i'));
+		return \View::make('weekdagen.uurrooster', compact('subjects', 'uren', 'volgorde', 'i', 'weekdag'));
 	}
 	public function GeefVrijdag(){
 		$subjects = \App\Subject::with('teacher')->get();
 		$uren = $this->globalUren;
 		$volgorde = $this->globalVolgordeVrijdag;
 		$i = count($volgorde); //Deze variabele staat voor het totaal aantal uren die dag.
+		$weekdag = "Vrijdag";
 
-		return \View::make('weekdagen.uurrooster', compact('subjects', 'uren', 'volgorde', 'i'));
+		return \View::make('weekdagen.uurrooster', compact('subjects', 'uren', 'volgorde', 'i', 'weekdag'));
 	}
 }

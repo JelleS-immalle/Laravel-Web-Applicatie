@@ -5,6 +5,8 @@ In deze repository vindt u mijn webapplicatie, gemaakt met Laravel.
 
 [De repository van de web app zonder framework](https://github.com/JelleS-immalle/Web-Applicatie)
 
+## De tabellen zijn enkel ingevuld voor de studenten Jelle en Jef (nadat de seeders zijn uitgevoerd), dus enkel van deze namen kunnen de vakken die ze volgen opgevraagd worden.
+
 ## 30-04-2017
 
 + Controller toegevoegd met functies per weekdag. Op deze manier zal er voor elke weekdag een view zijn.
@@ -48,6 +50,8 @@ In deze repository vindt u mijn webapplicatie, gemaakt met Laravel.
 + Mogelijkheid toegevoegd om een naam in te geven van een student, wanneer na het invoeren op de knop wordt gedrukt, worden alle lessen weergegeven die de bepaalde student volgt.
 
 + Wanneer er geen naam wordt meegegeven, wordt je naar een pagina geleid die zegt dat je een naam moet ingeven
+
++ Hoofding met de naam van de dag toegevoegd wanneer de dag wordt afgeprint
 
 ## Wordt in de toekomst toegevoegd...
 
