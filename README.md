@@ -53,6 +53,10 @@ In deze repository vindt u mijn webapplicatie, gemaakt met Laravel.
 
 + Hoofding met de naam van de dag toegevoegd wanneer de dag wordt afgeprint
 
+## 13-05-2017
+
++ If-functie aangepast in StudentController zodat als een onbekende/geen naam wordt ingegeven, een foutmelding wordt gegeven
+
 ## Wordt in de toekomst toegevoegd...
 
 + ER-diagram aanpassen zodat er gebruik kan gemaakt worden van foreign-keys [04-05-2017]

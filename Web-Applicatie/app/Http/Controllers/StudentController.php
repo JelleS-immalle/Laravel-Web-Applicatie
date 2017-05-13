@@ -9,7 +9,8 @@ class StudentController extends Controller
 	public function GeefLessenLeerling(){
 		$naamLeerling = Input::get('naamLeerling');
 		$studentId = \App\Student::where('studentName', '=', $naamLeerling)->pluck('id');
-		if (!$naamLeerling == ""){
+
+		if (\App\Student::where('studentName', '=', $naamLeerling)->exists()){
 			$studentSubjects = \App\Student::find($studentId)->subjects()->orderBy('subjectName')->get();
 			return \View::make('student/student', compact('studentSubjects', 'naamLeerling'));
 		} else {
