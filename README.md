@@ -7,6 +7,18 @@ In deze repository vindt u mijn webapplicatie, gemaakt met Laravel.
 
 ## De tabellen zijn enkel ingevuld voor de studenten Jelle en Jef (nadat de seeders zijn uitgevoerd), dus enkel van deze namen kunnen de vakken die ze volgen opgevraagd worden.
 
+### Wat te doen na het clonen:
+
++ `composer install`
++ Gegevens in *.env*-bestand aanvullen, schema en user aanmaken en ten slotte de user de juiste rechten geven
++ `php artisan migrate`
++ Alle seeders uitvoeren met de code hieronder
+	+ `php artisan db:seed --class=StudentSubjectTableSeeder`
+	+ `php artisan db:seed --class=StudentsTableSeeder`
+	+ `php artisan db:seed --class=SubjectsTableSeeder`
+	+ `php artisan db:seed --class=TeachersTableSeeder`
++ `php artisan serve`
+
 ## 30-04-2017
 
 + Controller toegevoegd met functies per weekdag. Op deze manier zal er voor elke weekdag een view zijn.
@@ -57,6 +69,10 @@ In deze repository vindt u mijn webapplicatie, gemaakt met Laravel.
 
 + If-functie aangepast in StudentController zodat als een onbekende/geen naam wordt ingegeven, een foutmelding wordt gegeven
 
+## 14-05-2017
+
++ Toevoeging kort stappenplan om de webapplicatie werkend te krijgen
+
 ## Wordt in de toekomst toegevoegd...
 
 + ER-diagram aanpassen zodat er gebruik kan gemaakt worden van foreign-keys [04-05-2017]
@@ -67,4 +83,4 @@ In deze repository vindt u mijn webapplicatie, gemaakt met Laravel.
 
 + Terug werken met cookies die naam en klas bijhouden
 
-+ Als er een foutieve naam wordt ingegeven, leiden naar een pagina met een foutmelding (Momenteel enkel wanneer er geen naam wordt gegeven)
++ Als er een foutieve naam wordt ingegeven, leiden naar een pagina met een foutmelding (Momenteel enkel wanneer er geen naam wordt gegeven) [13-05-2017]
